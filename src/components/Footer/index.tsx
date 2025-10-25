@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <div className="flex items-center gap-5">
                   <Link href="/" className="mb-8 inline-block">
-                    <Image src="/images/logo/brand.avif" alt="RJCO Howick Logo" width={400} height={700} />
+                    <Image src="/images/logo/rjco-logo.svg" alt="RJCO Howick Logo" width={400} height={700} />
                   </Link>
                   <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                     From inception, RJCO Howick Pty Ltd has sought to cater to a niche in the market with a focus on family owned enterprises and Small to Medium businesses.
@@ -160,24 +160,7 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
+              Demo for RJCO Howick
             </p>
           </div>
         </div>
