@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../Logo";
 
 const Footer = () => {
   return (
@@ -10,26 +11,14 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
-                </p>
+                <div className="flex items-center gap-5">
+                  <Link href="/" className="mb-8 inline-block">
+                    <Image src="/images/logo/brand.avif" alt="RJCO Howick Logo" width={400} height={700} />
+                  </Link>
+                  <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                    From inception, RJCO Howick Pty Ltd has sought to cater to a niche in the market with a focus on family owned enterprises and Small to Medium businesses.
+                  </p>
+                </div>
                 <div className="flex items-center">
                   <a
                     href="/"
@@ -109,44 +98,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className="w-full px-4 sm:w-2/2 md:w-2/2 lg:w-4/12 xl:w-4/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                <h2 className="mb-4 text-xl font-bold text-black dark:text-white">
+                  Get In Touch
                 </h2>
                 <ul>
                   <li>
@@ -154,7 +109,7 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      TOS
+                      033 330 6333
                     </Link>
                   </li>
                   <li>
@@ -162,7 +117,7 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Privacy Policy
+                      howickinfo@rjcohowick.co.za
                     </Link>
                   </li>
                   <li>
@@ -170,7 +125,15 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Refund Policy
+                      Mon Fri: 8:00 am – 4:30 pm
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      95 Main Street; Howick; KZN; 3290
                     </Link>
                   </li>
                 </ul>
@@ -179,35 +142,17 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                <h2 className="mb-4 text-xl font-bold text-black dark:text-white">
+                  Our Location
                 </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.1178697920165!2d30.228764475127826!3d-29.47990571163944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6a979a9b96a57%3A0xf7da24e4c50f04f6!2s95%20Main%20St%2C%20Howick%2C%203290%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1728368278063!5m2!1sen!2sza"
+                  width="90%"
+                  height="145"
+                  style={{ border: 0, borderRadius: "12px" }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>

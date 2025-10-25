@@ -133,3 +133,17 @@ layer(base);
     @apply inline-flex;
   }
 }
+
+.logo-svg:hover circle {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
