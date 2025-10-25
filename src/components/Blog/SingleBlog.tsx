@@ -35,7 +35,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           </div>
 
           <Link
-            href="/blog-details"
+            href="/"
             className="inline-block rounded bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-primary/90"
           >
             Read More
